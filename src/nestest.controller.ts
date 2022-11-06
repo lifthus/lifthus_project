@@ -1,19 +1,7 @@
 import { Controller, Get, Redirect, HttpCode, Post, Req, Query, Param, HostParam, Body } from '@nestjs/common';
 import { Request } from 'express';
 
-import { AppService } from './app.service';
-
-@Controller()
-export class AppController {
-  constructor(
-    private readonly appService: AppService,
-    ) {}
-
-  @Get()
-  getHello(): string {
-    return this.appService.getHello();
-  }
-}
+import { NestestService } from './nestest.service';
 
 // redirection test
 @Controller('red')
@@ -67,7 +55,7 @@ export class SomeTh { // cause we are using TS, need to determine Data Transfer 
   name: string;
   age: number;
   breed: string;
-}
+} 
 @Controller('pl')
 export class PLController {
   @Post()
