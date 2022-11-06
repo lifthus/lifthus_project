@@ -1,11 +1,33 @@
 import { Controller, Get, Redirect, HttpCode, Post, Req, Query, Param, HostParam, Body } from '@nestjs/common';
 import { Request } from 'express';
 
-import { NestestService } from './nestest.service';
+import { SBDService } from './nestest.service';
 
+import { SomeTh, SBD } from './interfaces/nestest.interface';
+
+/* Service test */
+@Controller('sbd')
+export class SBDController {
+    constructor(
+        private readonly sbdService: SBDService,
+    ) {}
+
+    @Post()
+    createSBD(@Body() sbd:SBD) : string {
+        return this.sbdService.create(sbd);
+    }
+
+    @Get()
+    findAll() : SBD[] {
+        return  this.sbdService.findAll();
+    }
+
+}
+
+/* Controller test */
 // redirection test
 @Controller('red')
-export class SBDController {
+export class RedController {
   @Get()
   findSBD(@Req() req: Request): string {
     return `${'Redirection test\n/home'}`
@@ -51,11 +73,6 @@ export class SD2Controller {
 }
 
 // payload test
-export class SomeTh { // cause we are using TS, need to determine Data Transfer Object schema
-  name: string;
-  age: number;
-  breed: string;
-} 
 @Controller('pl')
 export class PLController {
   @Post()
