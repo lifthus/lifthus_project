@@ -1,4 +1,6 @@
-import { Controller, Get, Redirect, HttpCode, Post, Req, Query, Param, HostParam, Body } from '@nestjs/common';
+import { Controller, Get, Redirect, HttpCode, 
+    Post, Req, Query, Param, 
+    HostParam, Body } from '@nestjs/common';
 import { Request } from 'express';
 
 import { SBDService } from './nestest.service';
