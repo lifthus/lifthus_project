@@ -5,7 +5,8 @@ import { Request } from 'express';
 
 import { SBDService } from './nestest.service';
 
-import { SomeTh, SBD } from './interfaces/nestest.interface';
+import { SomeTh } from './dto/nestest.dto';
+import { SBD } from './interfaces/nestest.interface';
 
 /* Service test */
 @Controller('sbd')

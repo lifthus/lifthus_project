@@ -1,8 +1,3 @@
-export class SomeTh { 
-  age: number;
-  breed: string;
-} 
-
 export class SBD {
   squat: number;
   benchpress: number;
