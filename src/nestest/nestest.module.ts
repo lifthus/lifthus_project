@@ -27,6 +27,7 @@ export class DyMdTestModule {
            //exports:providers
         }; // foRoot method may return a dynamic module either synchronously or async(via a Promise)
     }
+}
 // this module defines the Conn by default but depending on entities and options,
 // it exposes a colleciton of them.
 // Note that properties returned by the dynamic module 'extend' the base module.
