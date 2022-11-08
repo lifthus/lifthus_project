@@ -1,6 +1,6 @@
 import { Controller, Get, Redirect, HttpCode, 
     Post, Req, Query, Param, 
-    HostParam, Body } from '@nestjs/common';
+    HostParam, Body, HttpException, HttpStatus, ForbiddenException } from '@nestjs/common';
 import { Request } from 'express';
 
 import { SBDService } from './nestest.service';
@@ -23,6 +23,16 @@ export class SBDController {
     @Get()
     findAll() : SBD[] {
         return  this.sbdService.findAll();
+    }
+
+    @Get('exception')
+    async throwing() {
+      throw new HttpException('Forbidden', HttpStatus.FORBIDDEN);
+      // string or object
+    }
+    @Get('custom-exception')
+    async throwing2() {
+      throw new ForbiddenException();
     }
 
 }

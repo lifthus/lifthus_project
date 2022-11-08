@@ -3,7 +3,7 @@ import { Module, NestModule, RequestMethod, MiddlewareConsumer } from '@nestjs/c
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
-import { LoggerMiddleware } from './nestest/middleware/logger.middleware';
+import { LoggerMiddleware } from './nestest/middlewares/logger.middleware';
 
 import { SBDModule } from './nestest/nestest.module';
 
