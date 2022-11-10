@@ -1,0 +1,77 @@
+[33mcommit ddfdb5b48ad186358dc46cc104818bba8421c972[m[33m ([m[1;36mHEAD -> [m[1;32mnestest[m[33m, [m[1;31morigin/nestest[m[33m)[m
+Author: lifthus <lifthus531@gmail.com>
+Date:   Tue Nov 8 23:17:52 2022 +0900
+
+    Exception filters finished
+
+[33mcommit 631de46a8bc9fb58c033b8de8436a8be496e718f[m
+Author: lifthus <lifthus531@gmail.com>
+Date:   Tue Nov 8 16:30:41 2022 +0900
+
+     middleware finished
+
+[33mcommit e4763de9c43e31607ce8a4586cdd3056dcbd117b[m
+Author: lifthus <lifthus531@gmail.com>
+Date:   Tue Nov 8 12:48:49 2022 +0900
+
+     Module finished
+
+[33mcommit 609c36e264a5b3ed88eff024cf82fcceac4fefdb[m
+Author: lifthus <lifthus531@gmail.com>
+Date:   Mon Nov 7 11:43:05 2022 +0900
+
+     directory structure modified
+
+[33mcommit 937f1388e12fb597213213f7e7e0de808bb224de[m
+Author: lifthus <lifthus531@gmail.com>
+Date:   Mon Nov 7 10:52:10 2022 +0900
+
+     nest provider test
+
+[33mcommit 0acaa4c80753e12eee84f61cf71093b67b93486e[m
+Author: lifthus <lifthus531@gmail.com>
+Date:   Sun Nov 6 23:35:12 2022 +0900
+
+     sbd service : create and findAll
+
+[33mcommit df7e8165d3d0acfc701d36f448b82f3a09ff9313[m
+Author: lifthus <lifthus531@gmail.com>
+Date:   Sun Nov 6 22:56:26 2022 +0900
+
+    nest js practicing init
+
+[33mcommit f5d5cc3fec34d8698c86aee22b14fce3120d201c[m[33m ([m[1;31morigin/develop[m[33m, [m[1;32mdevelop[m[33m)[m
+Author: lifthus <lifthus531@gmail.com>
+Date:   Wed Nov 2 21:14:52 2022 +0900
+
+     backend router test
+
+[33mcommit e55b19603e6d803e80409cdb3e1a1164b1a0784a[m
+Author: lifthus <lifthus531@gmail.com>
+Date:   Wed Nov 2 20:18:51 2022 +0900
+
+     Readme change
+
+[33mcommit 37da6a808d48022eee94000c26880aa8f0ef84cb[m
+Author: lifthus <lifthus531@gmail.com>
+Date:   Wed Nov 2 20:16:08 2022 +0900
+
+     nest initialization
+
+[33mcommit ea236712da4da0b612bb9ad0fd508840ea4eeb16[m[33m ([m[1;31morigin/release[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mrelease[m[33m, [m[1;32mmain[m[33m)[m
+Author: lifthus <108582413+lifthus@users.noreply.github.com>
+Date:   Wed Nov 2 11:12:39 2022 +0900
+
+    Update README.md
+
+[33mcommit d0871e1183056c2cc3c3e75cfbb8b459c0fa0899[m
+Author: lifthus <108582413+lifthus@users.noreply.github.com>
+Date:   Sat Oct 8 17:14:57 2022 +0900
+
+    Update README.md
+
+[33mcommit ced235921e5eda81dc144b01b8261db7423c1435[m
+Author: lifthus <108582413+lifthus@users.noreply.github.com>
+Date:   Sat Oct 8 17:12:35 2022 +0900
+
+    Initial commit
