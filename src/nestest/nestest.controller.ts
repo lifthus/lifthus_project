@@ -1,4 +1,4 @@
-import { Controller, Get, Redirect, HttpCode, UseGuards,
+import { Controller, Get, Redirect, HttpCode, UseGuards, UseInterceptors,
     Post, Req, Query, Param, 
     HostParam, Body, HttpException, HttpStatus, ForbiddenException, ParseIntPipe, UsePipes } from '@nestjs/common';
 import { Request } from 'express';
@@ -10,12 +10,14 @@ import { SBD } from './interfaces/nestest.interface';
 import { JoiValidationPipe } from './pipe/joiValidation.pipe';
 import { RolesGuard } from './guard/roles.guard';
 import { Roles } from './decorators/roles.decorators';
+import { LoggingInterceptor } from './interceptor/logging.interceptor';
 
 const joi = require('joi')
 
 /* Service test */
 @Controller('sbd')
 @UseGuards(RolesGuard) // new RolesGuard() also possible, and can be applied at the method level too.
+@UseInterceptors(LoggingInterceptor) // globalIntrcepter by app.useGlobalInterceptoer(new ~);
 export class SBDController { // and app.useGlobalGuards(new RolesGuard()); for global guard.
     constructor( // and for global DI, like : provide: APP_GUARD to Module providers[] (A_G from /core)
         private readonly sbdService: SBDService,
